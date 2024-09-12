@@ -2,6 +2,10 @@
 
 Este repositório contém uma API desenvolvida como parte de um tech assignment. A API possui dois endpoints que realizam cálculos matemáticos utilizando classes desenvolvidas para este propósito.
 
+## Dependências
+
+Para executar esta API, é necessário ter instalado em sua máquina o Python 3.12 e o gerenciador de pacotes Poetry. Para instalar o Poetry, siga as instruções disponíveis em https://python-poetry.org/docs/#installation.
+
 ## Endpoints
 
 ### Endpoint 1: `/sum`
