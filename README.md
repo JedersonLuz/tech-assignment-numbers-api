@@ -6,6 +6,25 @@ Este repositório contém uma API desenvolvida como parte de um tech assignment.
 
 Para executar esta API, é necessário ter instalado em sua máquina o Python 3.12 e o gerenciador de pacotes Poetry. Para instalar o Poetry, siga as instruções disponíveis em https://python-poetry.org/docs/#installation.
 
+## Como utilizar a API
+
+Para utilizar esta API, siga os seguintes passos:
+
+1. Clone este repositório em sua máquina local.
+2. Instale as dependências necessárias utilizando poetry:
+```
+poetry install
+```
+3. Execute a aplicação:
+```
+fastapi run
+```
+4. Acesse a documentação da API em `http://localhost:8000/docs` para mais informações sobre os endpoints disponíveis.
+5. Para realizar testes unitários, execute o comando:
+```
+pytest
+```
+
 ## Endpoints
 
 ### Endpoint 1: `/sum`
@@ -44,23 +63,4 @@ Exemplo de resposta:
 {
   "resultado": 3
 }
-```
-
-## Como utilizar a API
-
-Para utilizar esta API, siga os seguintes passos:
-
-1. Clone este repositório em sua máquina local.
-2. Instale as dependências necessárias utilizando poetry:
-```
-poetry install
-```
-3. Execute a aplicação:
-```
-fastapi run
-```
-4. Acesse a documentação da API em `http://localhost:8000/docs` para mais informações sobre os endpoints disponíveis.
-5. Para realizar testes unitários, execute o comando:
-```
-pytest
 ```
