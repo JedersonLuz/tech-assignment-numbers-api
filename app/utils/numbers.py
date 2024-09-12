@@ -1,18 +1,19 @@
-from .number import divide
-from .number import sum as sum_number
+from .number import Number
 
 
-def sum(numbers: list[int]) -> int:
-    final_sum = 0
-    for number in numbers:
-        final_sum = sum_number(final_sum, number)
+class Numbers:
+    def sum(self, numbers: list[int]) -> int:
+        final_sum = 0
+        number_class = Number()
+        for number in numbers:
+            final_sum = number_class.sum(final_sum, number)
 
-    return final_sum
+        return final_sum
 
+    def average(self, numbers: list[int]) -> float:
+        final_sum = 0
+        number_class = Number()
+        for number in numbers:
+            final_sum = number_class.sum(final_sum, number)
 
-def average(numbers: list[int]) -> float:
-    final_sum = 0
-    for number in numbers:
-        final_sum = sum_number(final_sum, number)
-
-    return divide(final_sum, len(numbers))
+        return number_class.divide(final_sum, len(numbers))
